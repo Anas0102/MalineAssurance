@@ -69,8 +69,8 @@ function SimulerEquipe() {
       </div>
       <div>
         <h3>Répartition du Chiffre d'Affaires :</h3>
-        <p>Chiffre d'affaires pour les salariés seniors   {seniorRevenue}</p>
-        <p>Chiffre d'affaires pour les salariés juniors  {juniorRevenue}</p>
+        <p>Chiffre d'affaires pour les salariés seniors :  {seniorRevenue}</p>
+        <p>Chiffre d'affaires pour les salariés juniors : {juniorRevenue}</p>
       </div>
       <div>
         <h3>Répartition du Personnel :</h3>
