@@ -73,7 +73,7 @@ function SimulerEquipe() {
         <p>Chiffre d'affaires pour les salariés juniors : {juniorRevenue}</p>
       </div>
       <div>
-        <h3>Répartition du Personnel :</h3>
+        <h3>Répartition du salarié :</h3>
         <button onClick={simulateTeamAllocation}>Simuler Allocation</button>
         <p>Salariés seniors nécessaires : {seniorCount}</p>
         <p>Salariés juniors nécessaires : {juniorCount}</p>
