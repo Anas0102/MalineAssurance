@@ -45,4 +45,29 @@ router.post('/register',(req,res)=>{
         .catch((err)=>console.log(err));
     }));
 });
-       
+
+//@route Post Login
+//@desc login  user and return JWT token
+//@access Public
+router.post('/login',(req,res)=>{
+    //form validation
+    const {errors,isValid}=ValidateLoginInput(req.body);
+
+    //check validation
+    if(!isValid){
+        return res.status(400).json(errors);
+    }
+    const email=req.body.email;
+    const password=req.body.password
+
+    //find userby email
+   User.findOne({email}).then((user)=>{
+    //check if User exists
+    if (!user) {
+        return res.status(404).json({emailnotfound:"Email Not Found"});
+    }
+   });
+
+
+   //check password
+});

@@ -1,16 +1,18 @@
 const  mongoose=require("mongoose")
 const express=require("express")
+
 const cors=require("cors")
 const app = express()
 const ContratRoute=require("./routes/ContratRoute")
 const AssureRoute=require("./routes/assureRoute.js")
-
+const SalariésRoutes=require("./routes/SalariésRoutes")
 
 app.use(cors())
+
 app.use(express.json()) //parser les données au format json
 app.use("/",ContratRoute)
 app.use("/",AssureRoute)
-
+app.use("/Salaries",SalariésRoutes)
 require("dotenv").config()
 
 // Se connecter à la base de données

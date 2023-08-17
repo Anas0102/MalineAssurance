@@ -15,10 +15,10 @@ function Navbar() {
     <>
     <IconContext.Provider value={{color:'black'}}>
      
-    <div className='navbar'>
+    <div className='navbar fixed-top'>
     <div className='navbar-top'>
     
-    <Link to={"/"}><img src={logo} className='nav-logo' alt='Maline Assurance' /></Link>
+    <Link to={"/"}><img src={logo} className='nav-logo' alt='Maline Assurance' /> </Link>
           </div>
       <Link to="#" className='menu-bars'>
       <FaIcons.VscThreeBars onClick={showSidebar} />
@@ -30,6 +30,7 @@ function Navbar() {
         
         <Link to={"/"} className='menu-bars navbar-toggle'>
         <img src={logo} className='nav-logo1' alt='Maline Assurance' />
+       
         </Link>
         
      {SidebarData.map((item,index)=>{

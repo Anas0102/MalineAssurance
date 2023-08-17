@@ -37,16 +37,18 @@ function AddContract() {
   
   return (
     <div className='Contrats'>
-      <h1 >Création de la contrat </h1>
-      <p>Veuillez saisir les informations du contrat:</p>
+       <br/><br/><br/> <br/>
+      <br/><br/><br/>
+      <h1 className='text-center'>Création de la contrat </h1>
+      
       <br />
       <Form className='form' onSubmit={(event) => handleForm(event)} >
-       
+      <h3 className='retro text-center'>Veuillez saisir les informations du contrat:</h3>
         <Form.Label className={"form-label"} htmlFor={"TypeduContrat"}>Type du Contrat:</Form.Label>
         <br />
         <br />
-        <Form.Select  id={"TypeduContrat"} onChange={(e) => setTypeduContrat(e.target.value)}>
-          <option>Choisir le type du contrat</option>
+        <Form.Select className='retro' id={"TypeduContrat"} onChange={(e) => setTypeduContrat(e.target.value)}>
+          <option >Choisir le type du contrat</option>
           <option value="IARD" >IARD</option>
           <option value="en vie"  >en vie</option>
         </Form.Select>
@@ -54,22 +56,23 @@ function AddContract() {
         <br />
         <Form.Label className={"form-label"} htmlFor={"Date_Signature"}>Date de Signature:</Form.Label>
         <br></br>
-        <Form.Control  className={"form-control"} type="date" id={"Date_Signature"} onChange={(e) => setDate_Signature(e.target.value)} />
+        <Form.Control  className={"retro form-control"} type="date" id={"Date_Signature"} onChange={(e) => setDate_Signature(e.target.value)} />
 
         <br /><br />
         <Form.Label className={"form-label"} htmlFor={"Date_Echeance"}>Date d'Echeance:</Form.Label>
         <br></br>
-        <Form.Control className={"form-control"} type="date" id={"Date_Echeance"} onChange={(e) => setDate_Echeance(e.target.value)} /><br /><br />
-        <Form.Label className={"form-label"} htmlFor={"Montant_Prime"}>Montant Total:</Form.Label>
+        <Form.Control className={"retro form-control"} type="date" id={"Date_Echeance"} onChange={(e) => setDate_Echeance(e.target.value)} /><br /><br />
+       
+        <Form.Label className={" form-label"} htmlFor={"Montant_Prime"}>Montant Total:</Form.Label>
         <br />
-        <InputGroup><input type="number" step=".01" min="500 " max="
+        <InputGroup><input  className='retro inputMontant'  type="number" step=".01" min="500 " max="
         999,999,999,999,999
-        " placeholder="34876.50 Dhs" id={"Montant_Prime"} onChange={(e) => setMontant_Prime(e.target.value)} /></InputGroup>
-
+        " placeholder="34876.50€" id={"Montant_Prime"} onChange={(e) => setMontant_Prime(e.target.value)} /></InputGroup>
+             
         <br /><br />
         <InputGroup className="mb-3" >
           <InputGroup.Text >Description du Contrat: </InputGroup.Text>
-          <Form.Control className={"form-control"} rows="3" as="textarea" aria-label="Small"
+          <Form.Control className={"retro form-control"} rows="5" cols={5} as="textarea" aria-label="Small"
             id={"DescriptionduContrat"} onChange={(e) => setDescriptionduContrat(e.target.value)} />
         </InputGroup>
 

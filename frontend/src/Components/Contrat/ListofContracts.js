@@ -26,10 +26,12 @@ function ListofContracts() {
         getContrats() //Recharger les modifications après la suupression
     }
     return (
-      
-        <div className=' container-fluid  row justify-content-center mt-5 table-responsive  '>
-
-            <table className=' border border-dark table  table-bordered table-hover table-striped table-sm  '>
+       
+        <div className=' '>
+ <br/>
+        <br/><br/><br/> <br/>
+      <br/><br/><br/>
+            <table className='mb-5 border border-dark table  table-bordered table-hover table-striped table-sm border-spacing  '>
                 <thead className={"bg-light "}>
                     <tr><th  scope="col">N° du Contrat</th><th scope="col">Type du Contract </th>
                         <th scope="col">Date de Signature:</th><th >Date d'Echeance:</th><th scope="col">Montant Total:</th>

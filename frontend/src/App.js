@@ -6,10 +6,7 @@ import Projets from './Components/ContenuduNavbar/Projets'
 import Navbar from './Components/Navbar';
 
 import Dashboard from './Components/ContenuduNavbar/Dashboard';
- import Catalogue from "./Components/ContenuduNavbar/Catalogue";
- import Setting from './Components/ContenuduNavbar/Setting';
  import Déconnexion from './Components/ContenuduNavbar/Déconnexion'
-import Tasks from './Components/ContenuduNavbar/Tasks';
 import React from 'react';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -19,9 +16,17 @@ import EditContract from './Components/Contrat/EditContract';
 import Listdesassurés from './Components/Assuré/Listdesassurés';
 import AddAssuré from './Components/Assuré/AddAssuré';
 import EditAssuré from './Components/Assuré/EditAssuré';
+import Ref from './Components/ContenuduNavbar/Refcharge';
+import RefBenefice from './Components/ContenuduNavbar/RefBenefice';
+import SimulerEquipe from './Components/ContenuduNavbar/SimulerEquipe';
+import CommissionCalculatorSenior from './Components/Salarié/CommissionCalculatorSenior';
+import CommissionCalculatorJenior from './Components/Salarié/CommissionCalculatorJenior';
+
+
 
 
 function App() {
+  
   return (
     <>
 
@@ -30,13 +35,13 @@ function App() {
        <Navbar/>
       
         <Routes>
+          
         <Route  path='/'  Component={Home} />
-
         <Route  path='/Projets'  Component={Projets} />
         <Route  path='/Dashboard' Component={Dashboard} />
-        <Route  path='/Catalogue' Component={Catalogue} />
-        <Route  path='/Taches' Component={Tasks} />
-        <Route path='/Setting' Component={Setting}/>
+        <Route  path='/ReferentielCharges' Component={Ref} />
+        <Route  path='/ReferentielBénéfices' Component={RefBenefice} />
+        <Route path='/SimulerEquipe' Component={SimulerEquipe}/>
         <Route path='/Déconnexion' Component={Déconnexion}/>
 
         <Route path='/listdesContrats' Component={ListofContracts}/>
@@ -46,6 +51,9 @@ function App() {
         <Route path='/Listdesassurés' Component={Listdesassurés}/>
         <Route path='/AddAssuré' Component={AddAssuré}/>
         <Route path='/EditAssuré/:id' Component={EditAssuré}></Route>
+
+        <Route path='/CommissionCalculatorSenior' Component={CommissionCalculatorSenior}></Route>
+        <Route path='/CommissionCalculatorJenior' Component={CommissionCalculatorJenior}></Route>
         </Routes> 
       </Router>
 

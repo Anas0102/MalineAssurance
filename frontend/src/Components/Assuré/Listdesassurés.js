@@ -26,9 +26,12 @@ function Listdesassurés() {
     }
     return (
 
-        <div className='container-fluid  row justify-content-center mt-5  '>
+        <div className='  '>
+             <br/><br/><br/> <br/>
+      <br/><br/><br/>
 <h1 className='text-center'> Gestion des assurés</h1>
-            <table className='  border border-dark table  table-bordered table-hover table-striped col-md-4  '>
+
+            <table className='   border-dark table  table-bordered table-hover table-striped col-md-4  '>
                 <thead className={"bg-light "}>
                     <tr><th className='align-items-center'>identificateur</th><th>Prénom </th>
                         <th>Nom:</th><th>Date de Naissance:</th><th>Type d'assuré</th>
