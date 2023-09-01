@@ -1,0 +1,75 @@
+/* AddProfil.css */
+
+/* Centrer le contenu verticalement */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+  }
+  .titre{
+    text-align: center;
+    margin-top: -200px;
+  }
+  .titre1{
+    text-align: center;
+    
+    padding-top: -6px;
+  }
+  /* Styles du formulaire */
+  .form-container {
+    background-color: #f8f9fa;
+    border: 1px solid #a3a7ab;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    width: 500px;
+  }
+  
+  .form-container h2 {
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: flex;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 40px;
+    margin-right: 17rem;
+  }
+  
+  .button-container button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .button-container button:hover {
+    background-color: #0056b3;
+  }
+  
+  

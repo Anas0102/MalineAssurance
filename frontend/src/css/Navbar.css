@@ -1,0 +1,244 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+
+.navbar{
+ 
+  background-color: #4c4faa;
+  height: 87px;
+  display: flex;
+  justify-content: right;
+  text-decoration: none;
+  color: black;
+  position: fixed;
+ 
+}
+.menu-bars{
+  margin-right: 100rem;
+  margin-top: -4rem;
+  margin-left: 1rem;
+  font-size: 2rem;
+  background: none;
+  color: black;
+  text-decoration: none;
+  
+}
+.nav-menu{  
+                /*The vertical navbar    */
+  background-color: #4c4faa;
+  width: 250px;
+  height: 100vh;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  display:flex;
+  left: -100%;
+  transition: 1500ms;
+  text-decoration: none;
+  overflow-y:scroll;
+  border-radius: 5px solid rgb(150, 150, 174);
+  padding-top: 5px;
+   
+}
+
+.nav-menu.active{
+  left: 0;
+  transition: 350ms;
+  text-decoration: none;
+  float: none;
+  
+}
+.nav-text{
+  
+  display:flex;
+  justify-content:start ;
+  align-items: center;
+  list-style: none;
+  height: 60px;
+  text-decoration: none;
+  margin-bottom: 15px;
+ 
+}
+.nav-text a {
+  color: aliceblue;
+  font-size: 18px;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+ 
+border-radius: 4px;
+}
+.nav-text a:hover {
+  background-color:rgb(104, 149, 234) ;
+  position:sticky;
+  text-decoration: none;
+}
+.nav-menu-items{
+  width: 100%;
+  text-decoration: none;
+  font-size: 1.9rem;
+  padding: 0; /* Supprimez le padding par défaut pour les ul */
+  margin: 0; /* Supprimez le margin par défaut pour les ul */
+}
+.navbar-toogle{
+  background-color:#4c4faa  ;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  text-decoration: none;
+ 
+}
+.navbar-toggle li{
+  margin-left: 2rem;
+  font-size: 2rem;
+  background: none;
+  color: black;
+  text-decoration: none;
+}
+span{
+  margin-left: 16px;
+  text-decoration: none;
+}
+.nav-logo{
+  height: 86px;
+  width: 230px ;
+  display:flex ;
+  margin-left: 35rem;
+  align-items: center;
+  margin-top: -1rem;
+}
+.nav-logo1{
+  height: 86px;
+  width: 200px ;
+  display:flex ;
+ 
+  margin-left: 1.2rem;
+  align-items: center;
+  
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #173c74; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #2b1b6f; 
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #4c4faa; 
+}
+
+tr{
+  font-family: "Tahoma"
+}
+ .form {
+ justify-content: center;
+ align-items: center;
+  width: 45%;
+  padding:5%;
+  background-color: #4c4faa;
+  
+}
+.retro{
+  font-family: 'Merriweather';
+  font-weight: 700;
+ 
+  padding: 0.75rem 1rem ;
+  border-radius: 0.25rem;
+  border: solid 0.125rem #121212;
+  box-shadow: 0.25rem 0.25rem #121212;
+  transition: transform 50ms ,box-shadow 50ms;
+  
+}
+.retro1{
+  font-family: 'Merriweather';
+  font-weight: 700;
+ 
+  padding: 0.75rem 1rem ;
+  border-radius: 0.25rem;
+  border: solid 0.125rem #121212;
+  box-shadow: 0.25rem 0.25rem #121212;
+  transition: transform 50ms ,box-shadow 50ms;
+}
+.retro:active{
+  transform: translate(0.125rem,0.125rem);
+  box-shadow: 0.125rem 0.125rem #121212;
+}
+/* Styles pour le bouton d'enregistrement */
+.save-button {
+  background-color: #4c4faa;
+  color: rgb(160, 44, 44);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Aloevera';
+  display: flex;
+  align-items: center; /* Pour aligner l'icône et le texte verticalement */
+}
+
+/* Ajoutez un espace entre l'icône et le texte */
+.save-button .icon {
+  margin-right: 10px; /* Ajustez la valeur selon vos préférences */
+}
+
+.mb-5{
+  border-spacing: 5px 1rem;
+  margin-top: -100px;
+}
+
+.inputMontant{
+  width: 100%;
+
+}
+
+/*styler le tableau de refchargesVariables*/
+.table-container {
+  margin-top: 60px; /* Ajuster en fonction de la hauteur de la barre de navigation */
+ padding-right: 150px;
+  padding-left: 270px;
+}
+
+/* Ajustez la taille des cases */
+.table td, .table th {
+ 
+ 
+  text-align: center;/* Réduisez les paddings */
+  font-size: 14px; /* Réduisez la taille du texte */
+}
+
+/* Ajustez la largeur des colonnes si nécessaire */
+.table th:nth-child(1),
+.table td:nth-child(1) {
+  width: 1%; /* Ajustez la largeur en pourcentage */
+}
+.table th:nth-child(2),
+.table td:nth-child(2) {
+  width: 1%; /* Ajustez la largeur en pourcentage */
+}
+.table th:nth-child(3),
+.table td:nth-child(3) {
+  width: 1%; /* Ajustez la largeur en pourcentage */
+}
+.table th:nth-child(4),
+.table td:nth-child(4) {
+  width: 1%; /* Ajustez la largeur en pourcentage */
+}
+.table th:nth-child(5),
+.table td:nth-child(5) {
+  width: 1%; /* Ajustez la largeur en pourcentage */
+}
+.table th:nth-child(6),
+.table td:nth-child(6) {
+  width: 1%; /* Ajustez la largeur en pourcentage */
+}

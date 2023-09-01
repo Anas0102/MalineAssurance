@@ -2,11 +2,11 @@ import React from "react";
 
 
 import * as ImIcons from 'react-icons/im'
-import * as GoIcons from 'react-icons/go'
-import * as SiIcons from 'react-icons/si'
+import * as VsIcons from 'react-icons/vsc'
 import * as BiIcons from 'react-icons/bi'
 import * as RiIcons from 'react-icons/ri'
 import * as FaIcons from 'react-icons/fa'
+import * as TbIcons from 'react-icons/tb'
 export const SidebarData=[
     {
         title:'Home',
@@ -16,43 +16,33 @@ export const SidebarData=[
       
     },
     {
-        title:'Projets',
-        path:'/Projets',
-        icon:<GoIcons.GoProject/>,
+        title:'Référentiel des charges fixes',
+        path:'/FixedChargesList',
+        icon:<FaIcons.FaFileContract/>,
         cName:'nav-text'
     },
     {
-        title:'Contrats',
-        path:'/listdesContrats',
-        icon:<FaIcons.FaFileContract/>,
+        title:'Réferentiel des charges variables',
+        path:'/ReferentielChargesvariables',
+        icon:<VsIcons.VscSymbolVariable/>,
+        cName:'nav-text'
+    }, 
+   
+   
+    {
+        title:'Réferentiel des commisssions',
+        path:'/ReferentielCharges',
+        icon:<TbIcons.TbPercentage/>,
         cName:'nav-text'
     },
    
     {
-        title:'Réferentiel des charges',
-        path:'/ReferentielCharges',
-        icon:<RiIcons.RiGitRepositoryCommitsFill/>,
-        cName:'nav-text'
-    },
-    {
-        title:'Réferentiel des bénéfices',
-        path:'/ReferentielBénéfices',
-        icon:<SiIcons.SiCivicrm/>,
-        cName:'nav-text'
-    }, 
-    {
-        title:'Simuler equipe',
+        title:'Simuler Equipe',
         path:'/SimulerEquipe',
         icon:<RiIcons.RiTeamFill/>,
         cName:'nav-text'
     }, 
-    {
-        title:'Dashboard',
-        path:'/Dashboard',
-        icon:<BiIcons.BiSolidDashboard/>,
-        cName:'nav-text',
-        
-    }, 
+   
     {
         title:'Déconnexion',
         path:'/Déconnexion',

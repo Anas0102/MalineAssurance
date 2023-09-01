@@ -38,6 +38,7 @@ function SimulerEquipe() {
   };
 
   const simulateTeamAllocation = () => {
+    console.log("simulateTeamAllocation called");
     const simulatedSeniorTeam = [];
   const simulatedJuniorTeam = [];
 
@@ -74,7 +75,7 @@ function SimulerEquipe() {
       </div>
       <div>
         <h3>Répartition du salarié :</h3>
-        <button onClick={simulateTeamAllocation}>Simuler Allocation</button>
+        <button onClick={simulateTeamAllocation}>Simuler Equipe</button>
         <p>Salariés seniors nécessaires : {seniorCount}</p>
         <p>Salariés juniors nécessaires : {juniorCount}</p>
         

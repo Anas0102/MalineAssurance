@@ -1,0 +1,37 @@
+.footer {
+    background-color: #4c4faa;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    position: absolute;
+    bottom: -70rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    height: 10rem;
+    margin: 0 auto;
+    padding-bottom: 10px;
+  }
+  .logofooter{
+    height: 86px;
+  width: 230px ;
+  display:flex ;
+  margin-left: 32rem;
+  align-items: center;
+  margin-top: -1rem;
+  padding-bottom: 10px;
+  }
+  .social-icons a{
+    font-size: 40px;
+    padding-bottom: 30px;
+    margin-right: 15px; /* Ajustez la valeur selon votre préférence */
+  margin-bottom: 10px; /* Ajustez la valeur selon votre préférence */
+  margin-left: 2rem;
+
+  }
+ 
+  

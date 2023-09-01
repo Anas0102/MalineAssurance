@@ -39,7 +39,7 @@ const DeleteSalarié=async(req,res)=>{
 }
 const UpdateSalarié=async(req,res)=>{
     try {
-        await Salariésservices.UpdateSalarié(req.body)
+        await Salariésservices.UpdateSalarié(req.params.id,req.body,{ useFindAndModify: false})
         res.status(200).json("Update Salarié  with success")
     } catch (error) {
         console.log(error);

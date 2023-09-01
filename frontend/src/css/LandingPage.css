@@ -1,0 +1,40 @@
+body {
+    font-family: Helvetica, sans-serif;
+  }
+.landing-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+  }
+  
+  .section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0;
+  }
+  
+  .content {
+    flex: 2;
+    padding: 20px;
+  }
+  
+  .image {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  .iconup{
+    font-size: 40px;
+    right: inherit;
+    margin-bottom: -35rem;
+  }
+  
