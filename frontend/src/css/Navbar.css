@@ -70,8 +70,13 @@
  
 border-radius: 4px;
 }
+.nav-text {
+  text-transform: capitalize;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
+}
 .nav-text a:hover {
-  background-color:rgb(104, 149, 234) ;
+  background-color:#337CCF ;
   position:sticky;
   text-decoration: none;
 }
@@ -115,7 +120,6 @@ span{
   height: 86px;
   width: 200px ;
   display:flex ;
- 
   margin-left: 1.2rem;
   align-items: center;
   
@@ -241,4 +245,7 @@ tr{
 .table th:nth-child(6),
 .table td:nth-child(6) {
   width: 1%; /* Ajustez la largeur en pourcentage */
+}
+.addcontractButton{
+  margin-top:-4.5rem ;
 }

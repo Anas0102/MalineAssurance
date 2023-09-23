@@ -1,44 +1,7 @@
-// import React, { useState, useEffect } from 'react';
-// import axios from 'axios';
 
-// function FixedChargesList() {
-//   const [fixedCharges, setFixedCharges] = useState([]);
-
-//   useEffect(() => {
-//     fetchFixedCharges();
-//   }, []);
-
-//   const fetchFixedCharges = async () => {
-//     try {
-//       const response = await axios.get('/chargefixe');
-//       setFixedCharges(response.data);
-//     } catch (error) {
-//       console.error(error);
-//     }
-//   };
-
-//   return (
-//     <div>
-//         <br/><br/><br/><br/>
-//       <h2>Liste des Charges Fixes</h2>
-//       <ul>
-//         {fixedCharges.map((charge) => (
-//           <li key={charge._id}>
-//             <strong>Type :</strong> {charge.Type} | <strong>Montant :</strong> {charge.Montant}
-//           </li>
-//         ))}
-//       </ul>
-//     </div>
-//   );
-// }
-
-// export default FixedChargesList;
 import React, { useEffect, useState } from 'react'
-
-
-
 import { Link } from 'react-router-dom'
-
+import * as FiIcons from 'react-icons/fi';
 import * as BiIcons from "react-icons/bi"
 import  '../../../src/css/Navbar.css'
 
@@ -58,7 +21,7 @@ function FixedChargesList() {
     }
   
     return (<>
-            <br/><br/><br/> <br/>
+            <br/>
         <h1 className='text-center'>Referentiel des charges fixes </h1>
         <div className='table-container'>
       <br/><br/>
@@ -67,6 +30,7 @@ function FixedChargesList() {
                 <thead className={"bg-light "}>
                     <tr><th >Type</th>
                       <th >Montant</th>
+                      <th>Modifier un élément</th>
 
                     </tr>
                 </thead>
@@ -80,9 +44,10 @@ function FixedChargesList() {
                                    
                                     <td>{elem.Type}</td>
                                     <td>{elem.Montant}</td>
-                                    
-
-                                    
+                                    <td className='text-center'>
+                                        
+                                    <Link to={`/EditChargeFixe/${elem._id}`} className={" btn btn-primary"}>
+                                    <FiIcons.FiEdit /> </Link></td>
 
                                 </tr>)
 

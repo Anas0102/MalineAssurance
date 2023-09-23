@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import '../../css/AddProfil.css'
 import '../../css/Navbar.css'
+import '../../css/Footer.css';
 import * as FaIcons from "react-icons/fa"
 import { useNavigate } from 'react-router-dom';
 import FixedchargesServices from '../../services/FixedChargesServices';
@@ -52,7 +53,9 @@ function AddFixedCharge() {
              <button className="save" type="submit"><FaIcons.FaSave className="icon"/>Enregistrer</button>  
             </div>
           </form>
+         
         </div>
+        
       </div>
     );
 }

@@ -17,7 +17,7 @@ const Footer = () => {
         </div>
         <p>Contactez-nous : contact@malineassurance.com</p>
       </div>
-      <h5><p>&copy; {new Date().getFullYear()} Votre Entreprise. Tous droits réservés. 
+      <h5><p>&copy; {new Date().getFullYear()} Maline Assurance. Tous droits réservés. 
         <i className="fas fa-rocket"></i></p></h5>
     </footer>
   );

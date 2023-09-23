@@ -1,21 +1,10 @@
 
-import { BrowserRouter as Router,Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router,Route, Routes, Navigate } from 'react-router-dom';
 import './css/App.css';
-
 import Navbar from './Components/Navbar';
-
- import Déconnexion from './Components/ContenuduNavbar/Déconnexion'
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-
-
-import SimulerEquipe from './Components/ContenuduNavbar/SimulerEquipe';
-import CommissionCalculatorSenior from './Components/Salarié/CommissionCalculatorSenior';
-import CommissionCalculatorJenior from './Components/Salarié/CommissionCalculatorJenior';
-import Login from './Components/auth/Login';
-import Register from './Components/auth/Register';
-import RefChargesFixes from './Components/ContenuduNavbar/RefChargesFixes';
 import RefChargesVariables from './Components/ContenuduNavbar/RefChargesVariables';
 import AddProfil from './Components/Profil/AddProfil';
 import EditProfil from './Components/Profil/EditProfil';
@@ -23,57 +12,55 @@ import Referentielcommissions from './Components/ContenuduNavbar/Referentielcomm
 import FixedChargesList from './Components/ChargeFixe/FixedChargesList';
 import AddFixedCharge from './Components/ChargeFixe/AddFixedCharge';
 import CalculCommission from './Components/Com/CalculCommission';
-import { Provider } from "react-redux";
-import store from "./store";
-import Dashboard from './Components/dashboard/Dashboard';
+
 import Landing from './Components/layout/Landing';
+import EditFixedCharge from './Components/ChargeFixe/EditFixedCharge';
+import Login from './Components/Login/index';
+import Signup from './Components/Signup';
+import Main from './Components/Main';
 
 
 
-
-
-
+const user = localStorage.getItem("token");
 function App() {
   
   return (
     <>
 
-<Provider store={store}>
      <Router>
        <Navbar/>
        
         <Routes>
-          
-        <Route  path="/" Component={Landing} />
-        <Route  path="/register" Component={Register} />
-        <Route  path="/login" Component={Login} />
-        <Route  path='/RefChargesFixes'  Component={RefChargesFixes} />
+        {user ? (
+            <>
+              <Route path="/" element={<Landing />} />
+              <Route path='/FixedChargesList' element={<FixedChargesList/>}/>
+              <Route path="/ReferentielChargesvariables" element={<RefChargesVariables />} />
+              <Route path="/ReferentielCharges" element={<Referentielcommissions />} />
+              <Route path='/CalculCommission' element={<CalculCommission/>}/>
+              
+             {/*Les routes après authentification*/}
+            </>
+          ) : (
+            <Route path="/" element={<Navigate replace to="/Login" />} />
+          )}
+        {user && <Route path="/" exact element={<Landing />} />}
         
-        <Route  path='/ReferentielCharges' Component={Referentielcommissions} />
-        <Route  path='/ReferentielChargesvariables' Component={RefChargesVariables} />
-        <Route path='/SimulerEquipe' Component={SimulerEquipe}/>
-        <Route path='/Déconnexion' Component={Déconnexion}/>
+			<Route path="/signup" exact element={<Signup />} />
+			<Route path="/Login" exact element={<Login />} />
 
-        
-
-        
-
+			
         <Route  path="/AddProfil" Component={AddProfil} />
         <Route path='/EditProfil/:id' Component={EditProfil}/>
         
-
-        <Route path='/FixedChargesList' Component={FixedChargesList}/>
         <Route path='/AddFixedCharge' Component={AddFixedCharge}/>
-        <Route path='/CommissionCalculatorSenior' Component={CommissionCalculatorSenior}></Route>
-        <Route path='/CommissionCalculatorJenior' Component={CommissionCalculatorJenior}></Route>
-
-        <Route path='/CalculCommission' Component={CalculCommission}/>
-        <Route  path="/Dashboard" Component={Dashboard} />
+        <Route path='/EditChargeFixe/:id' Component={EditFixedCharge}/>
+        {/*Poser tous les routes avec accès publique*/}
         </Routes> 
         
       </Router>
 
-      </Provider>
+     
     </>
   );
   

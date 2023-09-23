@@ -1,9 +1,7 @@
 import React from "react";
 
-
 import * as ImIcons from 'react-icons/im'
 import * as VsIcons from 'react-icons/vsc'
-import * as BiIcons from 'react-icons/bi'
 import * as RiIcons from 'react-icons/ri'
 import * as FaIcons from 'react-icons/fa'
 import * as TbIcons from 'react-icons/tb'
@@ -38,17 +36,12 @@ export const SidebarData=[
    
     {
         title:'Simuler Equipe',
-        path:'/SimulerEquipe',
+        path:'/CalculCommission',
         icon:<RiIcons.RiTeamFill/>,
         cName:'nav-text'
     }, 
    
-    {
-        title:'Déconnexion',
-        path:'/Déconnexion',
-        icon:<BiIcons.BiLogOut/>,
-        cName:'nav-text'
-    },  
+    
     
     
 

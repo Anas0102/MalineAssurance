@@ -94,3 +94,32 @@
     font-size: 40px;
     
   }
+  .imgprofiles{
+    max-width: 100px; /* Largeur maximale de l'image */
+    margin: 30px 0;   /* Marge supérieure et inférieure de l'image */
+    display: block;   /* Pour centrer l'image horizontalement */
+    margin-top: 4rem;
+    margin-right: -34rem;
+    margin-left: 18rem;
+    margin-bottom: -2rem;
+  }
+  
+  /* Styles pour le texte */
+  .combination-info {
+    font-size: 18px; /* Taille de police du texte */
+    font-weight: bold; /* Gras pour le texte */
+    margin-top: 10px; /* Marge supérieure du texte */
+  }
+  .combination-list{
+    list-style-type: none;
+    padding: 0%;
+  }
+  .combination-list li{
+    font-size: 20px;
+    margin-bottom: 4px; 
+  }
+  .inputequipe{
+    width: 30%;
+    align-items: center;
+    text-align: center;
+  }
