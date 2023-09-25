@@ -20,6 +20,7 @@ function Navbar() {
 
   return (
     <>
+    
       <IconContext.Provider value={{ color: 'black' }}>
         <div className='navbar'>
           <div className='navbar-top'>
@@ -51,7 +52,7 @@ function Navbar() {
         <Link to={Login}><button className={styles.white_btn} onClick={handleLogout}>
 					Logout
 				</button></Link>
-
+          
             </ul>
           </nav>
         </div>
