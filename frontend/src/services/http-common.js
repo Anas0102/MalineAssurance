@@ -1,6 +1,6 @@
 import axios from "axios"
 const http=axios.create({
-    baseURL:"http://MalineAssurance.onrender.com",
+    baseURL:"http://localhost:4343",
     headers:{"Content-Type":"application/json"}
 })
 
